@@ -130,73 +130,278 @@ $font_js: "Font Awesome 6 Free"
     padding-top: 9px
 .foto_device
   padding-top: 55px
-  position: relative
+  display: flex
+  .d_flex
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+
+.sec3
+  padding-bottom: 70px
+  h2
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 42px
+    line-height: 52px
+    text-align: center
+    color: $black_color
+  p
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 13px
+    line-height: 17px
+    color: $black_color
+    text-align: center
+    padding-top: 9px
+    padding-bottom: 31px
+.sec3_vol
+  display: flex
+  justify-content: space-between
+  h3
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    line-height: 28px
+    color: #000000
+    padding-top: 37px
+    padding-bottom: 9px
+  span
+    font-family: $main_font
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: #4B4B4B
+    padding-bottom: 25px
   p
     font-family: $main_font
     font-style: normal
     font-weight: 400
-    font-size: 20px
-    line-height: 19px
-    text-align: right
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+    text-align: left
+.sec4
+  h2
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 42px
+    line-height: 52px
+    text-align: center
     color: $black_color
-    z-index: 3
-    position: absolute
-    bottom: 85px
-    left: 512px
-  h3
+  p
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 13px
+    line-height: 17px
+    color: $black_color
+    text-align: center
+    padding-top: 9px
+    padding-bottom: 31px
+  .sec4_vol
+    display: flex
+    justify-content: space-between
+    padding-bottom: 25px
+    .mini_container
+      background-color: #F8F9FA
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 453px
+      border-radius: 16px
+
+    p
+      font-family: $font-Readex
+      font-style: normal
+      font-weight: 400
+      font-size: 13px
+      line-height: 17px
+      text-align: center
+      color: $black_color
+      padding-top: 41px
+    h3
+      font-family: $font-Readex
+      font-style: normal
+      font-weight: 400
+      font-size: 28px
+      line-height: 35px
+      text-align: center
+      color: $black_color
+      padding-bottom: 30px
+    a:first-of-type
+      font-family: $main_font
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 22px
+      text-transform: capitalize
+      color: $black_color
+      border: 1px solid $black_color
+      border-radius: 200px
+      padding: 14px 53px 14px 53px
+      text-decoration: none
+    a:last-of-type
+      padding-top: 30px
+.sec5
+  padding-top: 25px
+  h2
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 42px
+    line-height: 52px
+    text-align: center
+    color: $black_color
+  p
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 13px
+    line-height: 17px
+    color: $black_color
+    text-align: center
+    padding-top: 9px
+    padding-bottom: 56px
+  .container_book
+    display: flex
+    padding-bottom: 75px
+    a
+      padding-right: 27px
+    p
+      font-family: $main_font
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      line-height: 30px
+      color: #000000
+      text-align: left
+      padding-bottom: 28px
+    .p_class
+      display: flex
+      flex-direction: column
+      padding-left: 30px
+
+  a
     font-family: $main_font
     font-style: normal
-    font-weight: 600
-    font-size: 35px
-    line-height: 38px
-    text-align: right
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    text-transform: capitalize
     color: #000000
-    position: absolute
-    bottom: 5px
-    left: 393px
-    z-index: 3
-  img:nth-child(1)
-    position: relative
-    z-index: 1
-    box-shadow: 8px 14px 20px 20px #0000001f
-  img:nth-child(2)
-    position: relative
-    z-index: 2
-    right: 900px
-    bottom: 95px
-.foto_device2
-  position: relative
+    display: flex
+    justify-content: center
+    text-decoration: none
+.sec6
+  h2
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 42px
+    line-height: 52px
+    text-align: center
+    color: #000000
+    padding-top: 75px
+    padding-bottom: 25px
+  .search
+    display: flex
+    width: 554px
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 18px
+    a
+      font-family: $main_font
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      text-transform: capitalize
+      color: black
+      border: 1px solid #C5C5C5
+      border-radius: 200px
+      padding: 13px 22px 13px 22px
+      text-decoration: none
+      margin-right: 7px
+      margin-top: 7px
+
+.sec7_flex
+  display: flex
+  justify-content: center
+  padding-top: 70px
+.sec7
+  padding-top: 68px
+  width: 935px
+  border-radius: 16px
+  background-color: #DCE5E2
+  display: flex
+  flex-direction: column
+  align-items: center
+  h2
+    font-family: $font-Readex
+    font-style: normal
+    font-weight: 400
+    font-size: 42px
+    line-height: 52px
+    text-align: center
+    color: #000000
+    padding-bottom: 9px
   p
     font-family: $main_font
     font-style: normal
     font-weight: 400
-    font-size: 20px
+    font-size: 16px
     line-height: 19px
-    text-align: right
-    color: $black_color
-    z-index: 3
-    position: absolute
-    bottom: 85px
-    left: 512px
-  h3
-    font-family: $main_font
-    font-style: normal
-    font-weight: 600
-    font-size: 35px
-    line-height: 38px
-    text-align: right
+    text-align: center
     color: #000000
-    position: absolute
-    bottom: 5px
-    left: 440px
-    z-index: 3
-  img:nth-child(1)
-    position: relative
-    z-index: 1
-    top: 77px
-    box-shadow: 8px 14px 20px 20px #0000001f
-  img:nth-child(2)
-    position: relative
-    z-index: 2
-    right: 610px
-    top: 77px
+  img
+    padding-top: 9px
+    padding-bottom: 10px
+
+
+.d_flex1
+  display: flex
+  padding-bottom: 40px
+  padding-top: 15px
+
+.dis_none
+  display: none
+.email
+  max-width: 564px
+  margin: auto
+
+input::placeholder
+  font-family: $main_font
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  color: #000000
+  padding-left: 32px
+.budgete_email
+  background: #DCE5E2
+  border: 1px solid #000000
+  border-radius: 54px 0px 0px 54px
+  height: 50px
+  width: 285px
+.div_button
+  background: #000000
+  border-radius: 0px 200px 200px 0px
+  padding: 15px 33px 16px 33px
+  font-size: 17px
+
+.budgete_button
+  font-family: $main_font
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  text-align: center
+  color: #FFFFFF
+  background-color: black
+
+

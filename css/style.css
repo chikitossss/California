@@ -4,6 +4,7 @@
 @import url(owl.carousel.css);
 @import url(owl.theme.default.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url(Input_form.css);
 header {
   padding-top: 31px;
   padding-bottom: 60px; }
@@ -159,77 +160,282 @@ header {
 
 .foto_device {
   padding-top: 55px;
-  position: relative; }
-  .foto_device p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: right;
-    color: black;
-    z-index: 3;
-    position: absolute;
-    bottom: 85px;
-    left: 512px; }
-  .foto_device h3 {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 38px;
-    text-align: right;
-    color: #000000;
-    position: absolute;
-    bottom: 5px;
-    left: 393px;
-    z-index: 3; }
-  .foto_device img:nth-child(1) {
-    position: relative;
-    z-index: 1;
-    box-shadow: 8px 14px 20px 20px #0000001f; }
-  .foto_device img:nth-child(2) {
-    position: relative;
-    z-index: 2;
-    right: 900px;
-    bottom: 95px; }
+  display: flex; }
+  .foto_device .d_flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
 
-.foto_device2 {
-  position: relative; }
-  .foto_device2 p {
+.sec3 {
+  padding-bottom: 70px; }
+  .sec3 h2 {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: black; }
+  .sec3 p {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: black;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 31px; }
+
+.sec3_vol {
+  display: flex;
+  justify-content: space-between; }
+  .sec3_vol h3 {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 37px;
+    padding-bottom: 9px; }
+  .sec3_vol span {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: right;
-    color: black;
-    z-index: 3;
-    position: absolute;
-    bottom: 85px;
-    left: 512px; }
-  .foto_device2 h3 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4B4B;
+    padding-bottom: 25px; }
+  .sec3_vol p {
     font-family: "Inter";
     font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 38px;
-    text-align: right;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     color: #000000;
-    position: absolute;
-    bottom: 5px;
-    left: 440px;
-    z-index: 3; }
-  .foto_device2 img:nth-child(1) {
-    position: relative;
-    z-index: 1;
-    top: 77px;
-    box-shadow: 8px 14px 20px 20px #0000001f; }
-  .foto_device2 img:nth-child(2) {
-    position: relative;
-    z-index: 2;
-    right: 610px;
-    top: 77px; }
+    text-align: left; }
+
+.sec4 h2 {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: black; }
+.sec4 p {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: black;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 31px; }
+.sec4 .sec4_vol {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px; }
+  .sec4 .sec4_vol .mini_container {
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 453px;
+    border-radius: 16px; }
+  .sec4 .sec4_vol p {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: black;
+    padding-top: 41px; }
+  .sec4 .sec4_vol h3 {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: black;
+    padding-bottom: 30px; }
+  .sec4 .sec4_vol a:first-of-type {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: black;
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 14px 53px 14px 53px;
+    text-decoration: none; }
+  .sec4 .sec4_vol a:last-of-type {
+    padding-top: 30px; }
+
+.sec5 {
+  padding-top: 25px; }
+  .sec5 h2 {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: black; }
+  .sec5 p {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: black;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 56px; }
+  .sec5 .container_book {
+    display: flex;
+    padding-bottom: 75px; }
+    .sec5 .container_book a {
+      padding-right: 27px; }
+    .sec5 .container_book p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #000000;
+      text-align: left;
+      padding-bottom: 28px; }
+    .sec5 .container_book .p_class {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px; }
+  .sec5 a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-decoration: none; }
+
+.sec6 h2 {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  padding-top: 75px;
+  padding-bottom: 25px; }
+.sec6 .search {
+  display: flex;
+  width: 554px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 18px; }
+  .sec6 .search a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: black;
+    border: 1px solid #C5C5C5;
+    border-radius: 200px;
+    padding: 13px 22px 13px 22px;
+    text-decoration: none;
+    margin-right: 7px;
+    margin-top: 7px; }
+
+.sec7_flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px; }
+
+.sec7 {
+  padding-top: 68px;
+  width: 935px;
+  border-radius: 16px;
+  background-color: #DCE5E2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sec7 h2 {
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 9px; }
+  .sec7 p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000; }
+  .sec7 img {
+    padding-top: 9px;
+    padding-bottom: 10px; }
+
+.d_flex1 {
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 15px; }
+
+.dis_none {
+  display: none; }
+
+.email {
+  max-width: 564px;
+  margin: auto; }
+
+input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-left: 32px; }
+
+.budgete_email {
+  background: #DCE5E2;
+  border: 1px solid #000000;
+  border-radius: 54px 0px 0px 54px;
+  height: 50px;
+  width: 285px; }
+
+.div_button {
+  background: #000000;
+  border-radius: 0px 200px 200px 0px;
+  padding: 15px 33px 16px 33px;
+  font-size: 17px; }
+
+.budgete_button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: black; }
 
 * {
   padding: 0;
