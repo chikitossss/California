@@ -5,13 +5,15 @@ $font-Readex: 'Readex Pro'
 $font_js: "Font Awesome 6 Free"
 $theme: DarkGray
 
-
+@mixin flex_between
+  display: flex
+  justify-content: space-between
 
 
 
 
 .container
-  max-width: 1440px
+  max-width: 1294px
   margin: auto
 .new_mobile
   background: #DCE5E2
@@ -115,6 +117,7 @@ $theme: DarkGray
 
 .sec2
   padding-bottom: 100px
+  max-width: 1301px
   h2
     font-family: $font-Readex
     font-style: normal
@@ -137,8 +140,7 @@ $theme: DarkGray
     padding-top: 9px
     padding-bottom: 55px
   .main_size
-    display: flex
-    justify-content: space-between
+    @include flex_between
     .size
       box-shadow: 0px 0px 20px #c5c5c5
       width: 639px
@@ -248,19 +250,6 @@ $theme: DarkGray
       text-align: center
       color: #000000
 
-
-
-
-
-
-
-//.foto_device
-//  padding-top: 55px
-//  display: flex
-//  .d_flex
-//    display: flex
-//    flex-wrap: wrap
-//    flex-direction: column
 
 .sec3
   padding-bottom: 70px
@@ -510,12 +499,20 @@ input::placeholder
   line-height: 17px
   color: #000000
   padding-left: 32px
-.budgete_email
+  text-align: left
+
+input
   background: #DCE5E2
-  border: 1px solid #000000
   border-radius: 54px 0px 0px 54px
   height: 50px
   width: 285px
+  text-align: center
+input#email:focus::-webkit-input-placeholder
+  transition: opacity 0.45s ease
+  opacity: 0
+input#email:focus::-moz-placeholder
+  transition: opacity 0.45s ease
+  opacity: 0
 .div_button
   background: #000000
   border-radius: 0px 200px 200px 0px
@@ -532,68 +529,140 @@ input::placeholder
   color: #FFFFFF
   background-color: black
 
-
 footer
-  .pad_logo
-    padding-left: 74px
-  .end
-    background-color: #F8F9FA
-    display: flex
-    justify-content: space-between
-    height: 500px
-    border-bottom: solid 2px #DCE5E2
-    a
-      img
-        padding-top: 55px
+  background: #F8F9FA
+  border-top:  1px solid #DCE5E2
+  .container
+    @include flex_between
+    padding: 44px 0 78px
+
   p
     font-family: $main_font
     font-style: normal
     font-weight: 400
     font-size: 16px
     line-height: 19px
-    color: #000000
-    padding-top: 19px
+    color: $black_color
+    padding-top: 18px
+
+  .footer_menu
+    display: flex
+    align-items: flex-start
+
   ul
-    a
-      text-decoration: none
-      li
+    margin-right: 100px
+    list-style: none
+
+    li
+      font-family: $main_font
+      font-style: normal
+      font-weight: 400
+      font-size: 22px
+      line-height: 28px
+      color: $black_color
+      margin-bottom: 19px
+      a
         font-family: $main_font
         font-style: normal
         font-weight: 400
         font-size: 17px
         line-height: 22px
-        color: #000000
-        list-style: none
+        color: $black_color
+        margin-bottom: 14px
         text-decoration: none
-        text-align: left
-        padding-bottom: 14px
-      li.first
-        font-family: $main_font
-        font-style: normal
-        font-weight: 400
-        font-size: 22px
-        line-height: 28px
-        color: #000000
-        list-style: none
-        text-decoration: none
-        text-align: center
-        padding-top: 44px
-        padding-right: 100px
-        padding-bottom: 19px
-  .finish
-    display: flex
-    justify-content: space-between
-    background-color: #F8F9FA
-    a
-      padding-top: 72px
-      font-family: 'Readex Pro'
+
+  .footer_end
+    max-width: 1350px
+    margin: auto
+    padding-bottom: 20px
+    border-top: 1px solid #DCE5E2
+    @include flex_between
+    span
+      font-family: $main_font
       font-style: normal
       font-weight: 400
       font-size: 18px
       line-height: 22px
-      color: #000000
+      color: $black_color
+
+    a
+      font-family: $main_font
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 22px
+      color: $black_color
       text-decoration: none
-      padding-right: 75px
-      padding-left: 75px
-      padding-bottom: 25px
+      img
+        position: relative
+        top: 4px
+//footer
+//  background-color: #F8F9FA
+//  .pad_logo
+//    padding-left: 74px
+//  .endt
+//    display: flex
+//    justify-content: space-between
+//    height: 500px
+//    border-bottom: solid 2px #DCE5E2
+//    a
+//      img
+//        padding-top: 55px
+//  p
+//    font-family: $main_font
+//    font-style: normal
+//    font-weight: 400
+//    font-size: 16px
+//    line-height: 19px
+//    color: #000000
+//    padding-top: 19px
+//  ul
+//    li
+//      font-family: $main_font
+//      font-style: normal
+//      font-weight: 400
+//      font-size: 17px
+//      line-height: 22px
+//      color: #000000
+//      list-style: none
+//      text-decoration: none
+//      text-align: left
+//      padding-bottom: 14px
+//    li.first
+//      font-family: $main_font
+//      font-style: normal
+//      font-weight: 400
+//      font-size: 22px
+//      line-height: 28px
+//      color: #000000
+//      list-style: none
+//      text-decoration: none
+//      text-align: center
+//      padding-top: 44px
+//      padding-right: 100px
+//      padding-bottom: 19px
+//      a
+//        text-decoration: none
+//  .finish
+//    display: flex
+//    justify-content: space-between
+//    background-color: #F8F9FA
+//    max-width: 1350px
+//    margin: auto
+//    padding-bottom: 20px
+//    span
+//      font-family: $main_font
+//      font-style: normal
+//      font-weight: 400
+//      font-size: 18px
+//      line-height: 22px
+//      color: $black_color
+//    a
+//      font-family: $main_font
+//      font-style: normal
+//      font-weight: 400
+//      font-size: 18px
+//      line-height: 22px
+//      color: $black_color
+//      text-decoration: none
 

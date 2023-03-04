@@ -2,43 +2,42 @@ $black_color: black
 $white_color: white
 $main_font: 'Inter'
 
-header
-  padding-top: 31px
-  padding-bottom: 60px
-  .container
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin: auto
-    max-width: 1440px
-    border: none
-    padding-bottom: 14px
-    .logo
-      //padding-left: 73px
-    nav
-      ul
-        list-style: none
-        display: flex
-        align-items: center
-        li
-          a
-            font-family: $main_font
-            font-style: normal
-            font-weight: 400
-            font-size: 14px
-            line-height: 17px
-            text-transform: uppercase
-            color: $black_color
-            text-decoration: none
-            padding-left: 30px
 
-.menu
+
+@media only screen and (min-width: 840px)
+  header
+    padding-top: 31px
+    padding-bottom: 50px
+    .container
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: auto
+      max-width: 1294px
+      border: none
+      #menu
+        padding-left: 150px
+        ul
+          display: flex
+          list-style: none
+          li
+            a
+              font-family: $main_font
+              font-style: normal
+              font-weight: 400
+              font-size: 14px
+              line-height: 17px
+              text-transform: uppercase
+              color: $black_color
+              text-decoration: none
+              padding-left: 30px
+
+.menu2
   ul
     li:first-of-type
       padding-right: 15px
     li:last-of-type
       padding-left: 15px
-      //padding-right: 102px
     li
       list-style: none
       display: inline
