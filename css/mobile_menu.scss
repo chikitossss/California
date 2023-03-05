@@ -11,7 +11,7 @@ header{
   padding-bottom: 50px;
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 }
@@ -55,9 +55,9 @@ header{
 
 #burger-menu.close span {
   transform: rotate(-45deg);
-  top: 13px;
   width: 27px;
   background: #d6dcff;
+  right: 40px;
 }
 #burger-menu.close span:before {
   top: 0px;

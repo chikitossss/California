@@ -3,12 +3,18 @@ $white_color: white
 $main_font: 'Inter'
 $font-Readex: 'Readex Pro'
 $font_js: "Font Awesome 6 Free"
-$theme: DarkGray
 
 @mixin flex_between
   display: flex
   justify-content: space-between
 
+@mixin max_width
+  max-width: 100%
+
+@mixin flex_colum
+  display: flex
+  flex-direction: column
+  align-items: center
 
 
 
@@ -21,26 +27,26 @@ $theme: DarkGray
   display: flex
   padding-top: 14px
   max-height: 613px
-
+  @include max_width
   h1
-    font-family: $font-Readex
-    font-style: normal
-    font-weight: 400
-    font-size: 58px
-    line-height: 70px
-    color: $black_color
-    padding-left: 56px
-    padding-top: 190px
-    padding-bottom: 19px
+      font-family: $font-Readex
+      font-style: normal
+      font-weight: 400
+      font-size: 58px
+      line-height: 70px
+      color: $black_color
+      padding-left: 56px
+      padding-top: 115px
+      padding-bottom: 19px
   p
-    font-family: $main_font
-    font-style: normal
-    font-weight: 400
-    font-size: 16px
-    line-height: 19px
-    color: $black_color
-    padding-left: 56px
-    padding-bottom: 50px
+      font-family: $main_font
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 19px
+      color: $black_color
+      padding-left: 56px
+      padding-bottom: 50px
   a
     font-family: $main_font
     font-style: normal
@@ -61,12 +67,9 @@ $theme: DarkGray
         text-align: center
         img
           max-width: 1070px
-
-
           .owl-stage
             display: flex
             align-items: center
-
           .owl-nav .owl-prev
             position: absolute
             left: -35px
@@ -118,6 +121,7 @@ $theme: DarkGray
 .sec2
   padding-bottom: 100px
   max-width: 1301px
+  @include max_width
   h2
     font-family: $font-Readex
     font-style: normal
@@ -141,15 +145,17 @@ $theme: DarkGray
     padding-bottom: 55px
   .main_size
     @include flex_between
+    align-items: normal
     .size
       box-shadow: 0px 0px 20px #c5c5c5
       width: 639px
-      height: 472px
-      margin-bottom: 50px
+      margin-bottom: 64px
+      @include max_width
       a
         img
           position: relative
           left: 60px
+          max-width: 100%
       span
         font-family: $main_font
         font-style: normal
@@ -170,11 +176,11 @@ $theme: DarkGray
         padding-right: 42px
   .size2
     box-shadow: 0px 0px 20px #c5c5c5
-    width: 639px
     height: 270px
     display: flex
     a
       img
+        @include max_width
         padding-left: 42px
   .text
     display: flex
@@ -201,9 +207,9 @@ $theme: DarkGray
   .size3
     box-shadow: 0px 0px 20px #c5c5c5
     width: 312px
-    height: 792px
     a
       img
+        @include max_width
         padding-left: 16px
         padding-top: 144px
         padding-bottom: 41px
@@ -226,10 +232,9 @@ $theme: DarkGray
       color: #000000
   .size4
     box-shadow: 0px 0px 20px #c5c5c5
-    width: 312px
-    height: 792px
     a
       img
+        @include max_width
         padding-top: 50px
         padding-bottom: 41px
     p
@@ -327,8 +332,11 @@ $theme: DarkGray
       display: flex
       flex-direction: column
       align-items: center
-      width: 453px
+      width: 390px
       border-radius: 16px
+      a
+        img
+          @include max_width
 
     p
       font-family: $font-Readex
@@ -386,6 +394,8 @@ $theme: DarkGray
   .container_book
     display: flex
     padding-bottom: 75px
+    img
+      @include max_width
     a
       padding-right: 27px
     p
@@ -414,6 +424,7 @@ $theme: DarkGray
     justify-content: center
     text-decoration: none
 .sec6
+  @include flex_colum
   h2
     font-family: $font-Readex
     font-style: normal
@@ -458,6 +469,7 @@ $theme: DarkGray
   display: flex
   flex-direction: column
   align-items: center
+  @include max_width
   h2
     font-family: $font-Readex
     font-style: normal
@@ -528,6 +540,7 @@ input#email:focus::-moz-placeholder
   text-align: center
   color: #FFFFFF
   background-color: black
+  border: none
 
 footer
   background: #F8F9FA
@@ -570,7 +583,6 @@ footer
         color: $black_color
         margin-bottom: 14px
         text-decoration: none
-
   .footer_end
     max-width: 1350px
     margin: auto
@@ -596,73 +608,247 @@ footer
       img
         position: relative
         top: 4px
-//footer
-//  background-color: #F8F9FA
-//  .pad_logo
-//    padding-left: 74px
-//  .endt
-//    display: flex
-//    justify-content: space-between
-//    height: 500px
-//    border-bottom: solid 2px #DCE5E2
-//    a
-//      img
-//        padding-top: 55px
-//  p
-//    font-family: $main_font
-//    font-style: normal
-//    font-weight: 400
-//    font-size: 16px
-//    line-height: 19px
-//    color: #000000
-//    padding-top: 19px
-//  ul
-//    li
-//      font-family: $main_font
-//      font-style: normal
-//      font-weight: 400
-//      font-size: 17px
-//      line-height: 22px
-//      color: #000000
-//      list-style: none
-//      text-decoration: none
-//      text-align: left
-//      padding-bottom: 14px
-//    li.first
-//      font-family: $main_font
-//      font-style: normal
-//      font-weight: 400
-//      font-size: 22px
-//      line-height: 28px
-//      color: #000000
-//      list-style: none
-//      text-decoration: none
-//      text-align: center
-//      padding-top: 44px
-//      padding-right: 100px
-//      padding-bottom: 19px
-//      a
-//        text-decoration: none
-//  .finish
-//    display: flex
-//    justify-content: space-between
-//    background-color: #F8F9FA
-//    max-width: 1350px
-//    margin: auto
-//    padding-bottom: 20px
-//    span
-//      font-family: $main_font
-//      font-style: normal
-//      font-weight: 400
-//      font-size: 18px
-//      line-height: 22px
-//      color: $black_color
-//    a
-//      font-family: $main_font
-//      font-style: normal
-//      font-weight: 400
-//      font-size: 18px
-//      line-height: 22px
-//      color: $black_color
-//      text-decoration: none
+
+
+@media only screen and (max-width: 1024px)
+  .new_mobile
+    h1
+      padding-top: 0
+  .sec2
+    .main_size
+      @include flex_colum
+      .adap
+        @include flex_colum
+      .size
+        margin-bottom: 30px
+      .size2
+        width: 640px
+        margin-bottom: 30px
+      .size3
+        margin-bottom: 30px
+  .sec3_vol
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+  .sec4
+    .sec4_vol
+      @include flex_colum
+      .mini_container
+        margin-bottom: 20px
+  footer
+    .end
+      @include flex_colum
+    .pad_logo
+      @include flex_colum
+    .footer_menu
+      padding-top: 30px
+      ul
+        margin-right: 30px
+
+@media only screen and (max-width: 900px)
+  .new_mobile
+    h1
+      font-size: 35px
+      line-height: 40px
+    .owl-dots
+      display: none
+  .sec5
+    .container_book
+      @include flex_colum
+
+@media only screen and (max-width: 430px)
+  .new_mobile
+    max-height: 300px
+    h1
+      font-size: 25px
+      line-height: 30px
+    a
+      position: relative
+      left: 160px
+      bottom: 95px
+  .owl-nav
+    .owl-next
+      position: absolute
+      top: 170px
+  .owl-nav
+    .owl-prev
+      position: absolute
+      top: 170px
+  .sec2
+    .main_size
+      @include flex_colum
+      .size
+        width: 380px
+        span
+          padding-left: 280px
+        a
+          img
+            left: 0
+      .size2
+        width: 380px
+        height: 191px
+        a
+          img
+            padding-left: 0
+      .text
+        span
+          padding-top: 0
+          padding-left: 0
+          text-align: center
+        h3
+          text-align: center
+          padding-left: 0
+      .size3
+        a
+          img
+            padding: 0 0 0 16px
+      .size4
+        p
+          padding: 5px
+  .sec6
+    .search
+      width: 300px
+  .search-container
+    width: 300px
+    display: block
+    margin: auto
+  footer
+    .end
+      display: flex
+      flex-direction: column
+    .footer_menu
+      @include flex_colum
+      text-align: center
+      padding-top: 20px
+      ul
+        margin-right: 0
+
+
+
+@media only screen and (max-width: 290px)
+  .menu2
+    visibility: hidden
+  #burger-menu
+    left: 25px
+  .owl-dots
+    display: none
+  .new_mobile
+    h1
+      font-size: 20px
+      line-height: 20px
+      font-family: $font-Readex
+      font-style: normal
+      font-weight: 400
+      color: $black_color
+      text-align: center
+      padding: 0
+    p
+      font-family: $main_font
+      font-style: normal
+      font-weight: 300
+      font-size: 15px
+      line-height: 12px
+      color: $black_color
+      text-align: center
+      padding: 0
+  .new_mobile a
+    font-family: $main_font
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    text-transform: capitalize
+    color: $black_color
+    border: 1px solid black
+    border-radius: 200px
+    padding: 1px 23px 7px 22px
+    margin: 56px
+    text-decoration: none
+    position: relative
+    bottom: 40px
+    left: 94px
+  .owl-nav .owl-prev
+    position: absolute
+    left: 10px
+    top: 190px
+  .owl-nav .owl-next
+    position: absolute
+    right: 10px
+    top: 190px
+  .sec2
+    .text
+      span
+        padding-top: 1px
+        text-align: center
+      h3
+        text-align: center
+      h2
+        font-size: 20px
+    .main_size
+      display: flex
+      flex-direction: column
+      margin: 20px
+      .size
+        margin-bottom: 20px
+        width: 250px
+        span
+          padding-left: 100px
+        a
+          img
+            left: 0
+      .size2
+        display: flex
+        flex-direction: column
+        width: 250px
+        height: 280px
+        a
+          img
+            padding-left: 0
+      .size3
+        width: 100%
+        margin-top: 20px
+        span
+          padding-left: 100px
+        a
+          img
+            padding: 0 0 0 0
+      .size4
+        margin-top: 20px
+  .sec3
+    .sec3_vol
+      @include flex_colum
+  .sec4
+    .sec4_vol
+      @include flex_colum
+      .mini_container
+        width: 250px
+        margin: 20px
+  .sec5
+    .container_book
+      @include flex_colum
+      padding-bottom: 75px
+  .sec6
+    .search
+      width: 283px
+  .sec7_flex
+    .sec7
+      margin: 5px
+      .email
+        input
+          height: 48px
+          width: 138px
+  footer
+    .end
+      display: flex
+      flex-direction: column
+    .footer_menu
+      @include flex_colum
+      text-align: center
+      padding-top: 20px
+      ul
+        margin-right: 0
+  .search-container
+    width: 200px
+    display: block
+    margin: auto
 
