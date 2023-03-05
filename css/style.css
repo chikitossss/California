@@ -50,8 +50,7 @@
   border-radius: 32px;
   display: flex;
   padding-top: 14px;
-  max-height: 613px;
-  max-width: 100%; }
+  max-height: 613px; }
   .new_mobile h1 {
     font-family: "Readex Pro";
     font-style: normal;
@@ -140,8 +139,7 @@
 
 .sec2 {
   padding-bottom: 100px;
-  max-width: 1301px;
-  max-width: 100%; }
+  max-width: 1301px; }
   .sec2 h2 {
     font-family: "Readex Pro";
     font-style: normal;
